@@ -1,0 +1,6 @@
+/spa/node_modules/
+/spa/public/build/
+/api/.env
+*.pyc
+__pycache__
+package.tar.gz

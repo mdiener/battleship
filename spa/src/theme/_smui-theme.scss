@@ -1,0 +1,84 @@
+@import "@material/theme/color-palette";
+
+:root {
+  --mdc-theme-primary: #2962ff;
+  --mdc-theme-primary-light: #b8cbff;
+  --mdc-theme-on-primary: #f8f8f8;
+  --mdc-theme-red: red;
+}
+
+html, body {
+  font-family: Roboto, sans-serif;
+  color: #171717;
+}
+
+.color-blue {
+  color: var(--mdc-theme-primary);
+}
+
+.color-light-blue {
+  color: var(--mdc-theme-primary-light);
+}
+
+.color-red {
+  color: var(--mdc-theme-red);
+}
+
+.line {
+  .square {
+    .inner {
+      font-size: 4vw;
+      i {
+        font-size: 4.5vw;
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .line {
+    .square {
+      .inner {
+        font-size: 40px;
+        i {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+}
+
+.play-game {
+  margin-top: 20px;
+}
+
+.fields {
+  margin-top: 10px;
+}
+
+.fields.state-placing {
+  .square {
+    cursor: pointer;
+  }
+}
+
+.fields.state-none {
+  .square {
+    cursor: not-allowed;
+  }
+}
+
+.fields.state-playing {
+  .square {
+    cursor: crosshair;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
